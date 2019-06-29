@@ -1,0 +1,311 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*End of reset code start of own css */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+html, body, #root{
+  min-height: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+}
+.wrapper{
+  width: 80%;
+  margin: 5.5em auto 0 auto;
+  background-color: rgba(255, 255,255,0.8);
+  box-shadow: 1px 1px 10px #807E7E;
+  z-index: 2;
+}
+.Navigationbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: 'Raleway';
+  font-size: 2.5em;
+  background-color:rgba(0, 0, 0, 0.4);
+}
+.Navigationbar li{
+  padding: 0 1em 0.5em 1em;
+}
+.Navigationbar a{
+  color: white;
+}
+.Navigationbar a:hover{
+  color:#00FFB3;
+}
+.landingsection{
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat';
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landingsection h1{
+  font-size: 8em;
+}
+.landingsection h2{
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.main-transparant-button{
+  background-color: rgba(255,255,255,0.2);
+  font-family: 'Raleway';
+  border-radius: 14px;
+  border: 6px solid #00FFB3;
+  padding: 0.7em 1em;
+  font-size: 1.5em;
+}
+.fwfhbackground{
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.homebg{
+  background-image: url('./imgs/vinyl.jpeg');
+}
+.transparantbox{
+  background-color: rgba(219, 209, 209, 0.60);
+}
+.hometextbox{
+  margin: auto 0;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.textbox{
+  padding: 1em;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  box-shadow: 2x 2px 10px #DBD5D5;
+}
+.textbox h1{
+  text-align: center;
+  font-family: 'Raleway'
+}
+.centerbuttons{
+  display: flex;
+  justify-content: center;
+}
+.rightbuttons{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1em;
+}
+.Searchheader{
+  text-align: center;
+  padding: 1em;
+}
+.Searchheader input{
+  margin: 0 auto;
+  width: 50%;
+}
+.Searchheader button{
+  margin: 1em auto;
+}
+.flexcards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexcenterh{
+  justify-content: center;
+}
+.artistoverviewbg{
+  background-image: url('./imgs/concert.jpeg')
+}
+.artistcard{
+  justify-content: space-between;
+  position: relative;
+  height: 15em;
+  margin: 0.5em 1em;
+  box-shadow: 1px 1px 10px black;
+}
+.whiteonblackcard{
+  background-color: rgba(255,255,255, 0.7)
+}
+.artistcard hr{
+  width: 85%;
+  margin: 0 auto;
+}
+.artistcard h2{
+  text-align: center;
+}
+.flexcard-halfwidth{
+  flex-basis: 40%;
+}
+.flexcard-thirdwidth{
+  flex-basis: 30%;
+}
+.bottom-fix{
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.bottom-fix > *{
+  margin-left: 0.5em;
+  width: 1fr;
+}
+.artistpagebg{
+  position: fixed;
+  top:0;
+  left:0;
+  background: url('./imgs/studio.jpeg');
+  z-index: -1;
+}
+.albumcard{
+  min-width: 22%;
+  max-width: 22%;
+  flex: 1 1 0;
+  position: relative;
+  margin: 1em 0.5em;
+  box-shadow: 1px 1px 10px black;
+}
+.artist-album-cards{
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.albumcard h1{
+  font-family: 'Montserrat'
+}
+.albumcard img{
+  width: 100%;
+}
+.albuminfo{
+  height: auto;
+  padding: 0 1em;
+  background-color: rgba(255, 255, 255, 0.0)
+}
+.greysubtext{
+  font-style: italic;
+  color:rgb(101, 101, 101);
+}
+.objfill{
+  object-fit: cover;
+}
+.songli{
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  background-color: rgba(219, 209, 209, 0.15);
+  border-bottom: 1px solid rgb(101, 101, 101);
+  padding: 0.2em 1em;
+}
+.songli h4{
+  display: inline;
+}
+.songli h5{
+  font-style: italic;
+  color:rgb(152, 148, 148)
+}
+.pushright{
+  margin-left: auto;
+  margin-right: 1em;
+}
+.songlist table{
+  width: 100%;
+}
+.songlist thead{
+  font-family: 'Montserrat';
+  font-size: 1.7em;
+  font-weight: bold;
+}
+.songlist tr{
+  border-bottom: 1px solid #BDB5B5;
+}
+.songlist td{
+  font-size: 1.6em;
+}
+.pushedright{
+  margin-left: auto;
+}
+.albumcard-albumpage{
+  box-shadow: 1px 1px 10px black;
+}
+.albumcover-info{
+  display: inline;
+}
+.albumcard-albumpage{
+  padding: 1em 2em;
+}
+.albumcard-albumpage p{
+  font-weight: bold;
+}
+.Albumhead img{
+  float: left;
+  margin-right: 1.5em;
+}
+.smallbutton{
+  font-size: 1em;
+  padding: 0.5em;
+  margin: 0.5em 0em 0.5em 2em;
+}
+.Artistname{
+  text-align: center;
+  font-weight: bold;
+  font-size: 4em;
+  font-style: italic;
+}
+.heading{
+  text-align: center;
+  margin: 1em 0em 2.5em 0em;
+}
+.flexleft{
+  justify-content: start;
+}
